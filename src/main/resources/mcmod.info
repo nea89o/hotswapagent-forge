@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "hotswapagent-forge",
+    "name": "Hotswapagent Forge",
+    "description": "Supplies Hotswap Agent functionality to the Forge Event Bus",
+    "version": "1.0.0",
+    "mcversion": "1.8.9",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "nea89o"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
