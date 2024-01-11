@@ -36,7 +36,7 @@ public class HotswapAgentPlugin {
         // instance, which we can then use to manipulate functionality inside the application class loader
         String src = PluginManagerInvoker.buildInitializePlugin(HotswapAgentPlugin.class);
         src += PluginManagerInvoker.buildCallPluginMethod(HotswapAgentPlugin.class, "registerTweaker", "this", "java.lang.Object");
-        val declaredConstructor = ctClass.getDeclaredConstructor(new CtClass[0]);
+        val declaredConstructor = ctClass.getDeclaredMethod("getLaunchArguments");
         declaredConstructor.insertAfter(src);
         LOGGER.info("Hotswapagent Forge Tweaker enhanced.");
     }
